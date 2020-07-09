@@ -1,0 +1,31 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grupoIconos{
+    font-size: 9rem;
+    color: lavenderblush;
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+.active{
+    color: #ffee30;
+    transform: rotate(72deg);
+}
+.icon{
+    padding: 0.5rem;
+    transition-timing-function: ease-in;
+    transition: transform 0.5s;
+}
+i:hover,
+#iconGroup > i:hover::before,
+#iconGroup > i:hover ~ i::before{
+    color: #ffee30;
+}
